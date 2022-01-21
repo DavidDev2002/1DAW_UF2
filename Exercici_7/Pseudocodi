@@ -1,0 +1,29 @@
+function
+	var
+		INTEGER size,input;
+	endvar
+	size = tamaño();
+	var
+		INTEGER array[size];
+	endvar
+	for i to size do
+		array[i] = valor();
+	end for
+	
+endfunction
+
+function tamaño (int size)
+	do
+		WRITE Introduce un numero entre el 1 y el 50: 
+		READ size;
+	while size < 1 OR size > 50;
+		
+endfunction validar
+
+function valor(int num)
+	do
+		WRITE Introduce un numero del 1 al 10: ;
+		READ num;
+	while num < 1 OR num > 10;
+endfunction valor
+
