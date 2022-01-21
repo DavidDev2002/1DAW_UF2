@@ -1,0 +1,22 @@
+function
+	var
+		INTEGER x,y;
+	endvar
+	
+endfunction
+
+function potencia(int x int y)
+	var
+		INTEGER i,t;
+	endvar	
+	t:=x;
+	for i to y - 1 do
+		t *= x 
+	endfor
+	return t;
+endfunction potencia
+
+function validarnat
+	
+endfunction validarnat
+
