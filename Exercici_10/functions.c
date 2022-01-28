@@ -34,16 +34,16 @@ void modifyData(struct libro *o,int size){
 
 void printData(struct libro *o, int size){
     printf("------------------------------------------------\n");
+    printf("Nom----Autor----Editorial----Data----Unitats----Usuari----Prestec\n");
     for(int i=0; i<size; i++){
-        printf("Aquestes són les dades del llibre: [%d]\n", i+1);
-        printf("Nom del llibre: %s\n",o[i].titulo);
-        printf("Nom del autor del llibre: %s\n",o[i].autor);
-        printf("Editorial del llibre: %s\n",o[i].editorial);
-        printf("Data de publicació del llibre: %d/%d/%d\n",o[i].dia_p,o[i].mes_p,o[i].any_p);
-        printf("Unitats totals del llibre: %d\n",o[i].unitats);
-        printf("Usuari que ha encarregat el llibre: %s\n",o[i].usuari);
-        printf("Dies per poder tornar el llibre: %d\n",o[i].prestec);
-        printf("------------------------------------------------\n");
+        printf("%s		",o[i].titulo);
+        printf("%s		",o[i].autor);
+        printf("%s		",o[i].editorial);
+        printf("%d/%d/%d		",o[i].dia_p,o[i].mes_p,o[i].any_p);
+        printf("%d		",o[i].unitats);
+        printf("%s		",o[i].usuari);
+        printf("%d		",o[i].prestec);
+        printf("\n");
     }
 }
 
@@ -55,6 +55,8 @@ int validate(){
     }while(num<1);
     return num;
 }
+
+
 
 
 
